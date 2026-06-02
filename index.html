@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio Blog</title>
+    <style>
+        *{
+box-sizing:border-box;
+}
+body{
+font-family:Arial;
+background:white;
+color: steelblue;
+}
+
+#navbar{
+position:fixed;
+top:0;
+width:100%;
+background : blue;
+padding:5px;
+
+}
+
+#navbar ul{
+display:flex;
+justify-content:center;
+gap:40px;
+list-style:none;
+}
+
+#navbar a{
+color:white;
+font-size:18px;
+padding:10px;
+}
+
+#navbar a:hover{
+background:white;
+color: blue;
+border-radius:8px;
+}
+
+.section{
+min-height:100vh;
+padding:130px 40px;
+text-align:center;
+}
+
+#home{
+background:#ffffff;
+}
+
+#articles{
+background:#eaf4ff;
+}
+
+#about{
+background:white;
+}
+
+#contact{
+background:#eaf4ff;
+}
+
+.card,.profile{
+
+background:white;
+
+padding:25px;
+
+margin:25px auto;
+
+max-width:600px;
+
+border-radius:15px;
+
+box-shadow:0 0 15px rgba(0,90,255,.2);
+}
+
+
+h1,h2,h3{
+color: blue;
+}
+    </style>
+</head>
+
+<body>
+
+<nav id="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="section">
+    
+    <h1>Welcome to My Blog</h1>
+      <div class="card">
+        <p >
+        Hello! I'm Thanmai</p>
+       <p>Welcome to my personal blog website.</p> 
+       </div>
+</section>
+
+<!-- ARTICLES -->
+<section id="articles" class="section">
+    <h2>My Interests</h2>
+
+    <div class="card">
+        <h3>Web Development</h3>
+        <p>I enjoy building websites using HTML, CSS and JavaScript.</p>
+    </div>
+
+    <div class="card">
+        <h3>Programming</h3>
+        <p>I practice coding and improve problem solving skills.</p>
+    </div>
+
+    <div class="card">
+        <h3>Learning New Technologies</h3>
+        <p>Exploring software development and modern tools.</p>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+
+    <h2>About Me</h2>
+
+    <div class="profile">
+        <p><strong>Name:</strong> Thanmai</p>
+        <p><strong>Role:</strong> Student</p>
+        <p><strong>Goal:</strong> Become a Software Engineer</p>
+        <p><strong>Skills:</strong> HTML, CSS, Java, JavaScript</p>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+
+    <h2>Contact</h2>
+
+    <div class="profile">
+        <p>📧 Email : thanmai@gmail.com</p>
+        <p>📱 LinkedIn :https://linkedin.com/in/nelakurthi-thanmai </p>
+        <p>💻 GitHub : https://github.com/NelakurthiThanmai</p>
+    </div>
+
+</section>
+
+<script >
+    window.addEventListener("scroll",function(){
+
+let nav=document.getElementById("navbar");
+
+if(window.scrollY>100){
+nav.style.background="#003366";
+}
+else{
+nav.style.background= "blue";
+}
+
+});
+</script>
+
+
+</body>
+</html>
